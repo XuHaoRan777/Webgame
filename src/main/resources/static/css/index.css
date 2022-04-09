@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-size: cover;
+    /*background: url("../images/scene/homebackground2.png") no-repeat fixed;*/
+    background: linear-gradient(to bottom right, blue, pink)  no-repeat fixed;
+}
+.login{
+    border: 1px solid rgba(178, 190, 195,0);
+    background-color: rgba(178, 190, 195,0.4);
+    border-radius:20px;
+    width: 400px;
+    height: 200px;
+    margin: 17% auto 0;
+}
+.Login-div{
+    /* border: 1px solid red; */
+    width: 350px;
+    height: auto;
+    opacity: 0.9;
+    margin: 50px auto;
+}
+.Login-div span{
+    display: block;
+    margin-top: 25px;
+    /* border: 1px solid red; */
+    color: white;
+    font-size: 20px;
+}
+.Login-input{
+    width: 250px;
+    line-height: 30px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    opacity: 0.7;
+    font-size: 18px;
+    text-indent: 5px;
+}
+.Login-submit{
+    display: block;
+    margin: 35px auto;
+    border: 1px solid rgba(47, 54, 64,0);
+    border-radius: 8px;
+    width: 220px;
+    line-height: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(47, 54, 64,0.4);
+    letter-spacing:5px;
+}
+.Login-submit:hover{
+    background-color: #424242;
+    transition-duration: 2s;
+}
