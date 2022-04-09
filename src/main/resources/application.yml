@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.35.17.233:3306/webgame?useUnicode=true&characterEncoding=utf-8&userSSL=false
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      aop-patterns: com.webgame.*
+      filters: stat,wall,slf4j
+      stat-view-servlet:
+        enabled: true
+        reset-enable: false
+        login-username: root
+        login-password: 520@MuSha
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: '*.js,*.css,*.jpg,*.JPG,*.jpeg,*.png,*.PNG,*.ico,/druid/*'
+      filter:
+        stat:
+          slow-sql-millis: 1000
+          log-slow-sql: true
+          enabled: true
+        wall:
+          enabled: true
+          config:
+            drop-table-allow: false
+  mvc:
+    view:
+      suffix: .html
