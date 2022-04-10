@@ -41,6 +41,8 @@ body{
     text-indent: 5px;
 }
 .Login-submit{
+    text-align: center;
+    text-decoration: none;
     display: block;
     margin: 35px auto;
     border: 1px solid rgba(47, 54, 64,0);
@@ -55,5 +57,5 @@ body{
 }
 .Login-submit:hover{
     background-color: #424242;
-    transition-duration: 2s;
+    transition-duration: 1.5s;
 }

@@ -10,12 +10,10 @@
 <body>
 
 
-<div id="Login" class="login">
+<div class="login">
     <div class="Login-div" >
-
         <span>Token：<input type="text" class="Login-input" name="nameOrEmail" placeholder=" 请输入token进行登录"/></span>
-<!--        <span>密&emsp;码：<input type="text" class="Login-input" name="password" placeholder=" 请输入密码" /></span>-->
-        <input type="submit" value="进入游戏" class="Login-submit" />
+        <a type="submit" id="login" class="Login-submit">进入游戏</a>
     </div>
 </div>
 
@@ -25,7 +23,7 @@
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript">
 
-
+    $("#login").attr('href',CodeXu_url+'/gamepage?gamepage=index');
 
 </script>
 </body>
