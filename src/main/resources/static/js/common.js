@@ -4,6 +4,12 @@ var tianxin_url = "http://114.86.224.5:7777/";
 
 
 function commonAjax(type,url,methodName,data){
+
+    if(type != "get" || type != "post"){
+        alert("请求方式有误！请选择 get 或者 post ！");
+        return;
+    }
+
     $.ajax({
         type:type,
         dateType: 'json',
