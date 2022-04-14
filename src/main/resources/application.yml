@@ -31,3 +31,10 @@ spring:
   mvc:
     view:
       suffix: .html
+
+okhttp:
+  connect-timeout-ms: 500
+  keep-alive-duration-sec: 5000
+  max-idle: 100
+  read-timeout-ms: 500
+  write-timeout-ms: 500
